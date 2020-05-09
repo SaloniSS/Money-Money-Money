@@ -1,4 +1,8 @@
-.button {
-    height: 2rem;
-    width: 3rem;
+button {
+    height: 5rem;
+    width: 10rem;
+}
+
+.hidden {
+    font-size: 20px;
 }

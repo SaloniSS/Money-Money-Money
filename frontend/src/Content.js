@@ -14,7 +14,7 @@ const Content = () => {
       <img src={logo} className="App-logo" alt="mode" />
       <div className="modelSelection">
         <ModelButton text="hello" icon="shop" />
-        <ModelButton text="hello" icon="shop" />
+        <ModelButton text="chipotle burritos" icon="shop" />
       </div>
     </div>
   );
