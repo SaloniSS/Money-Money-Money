@@ -1,0 +1,12 @@
+button {
+    height: 5rem;
+    width: 10rem;
+}
+
+.hidden {
+    font-size: 15px;
+}
+
+.thumbnail {
+    height: 4rem;
+}
