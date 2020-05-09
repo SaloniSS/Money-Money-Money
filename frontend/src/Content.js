@@ -1,29 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import ModelButton from "./Button";
 import logo from "./logo.svg";
 import "./Content.css";
 
 const MODES = [
   {
-    name: "chipotle",
+    name: "Chipotle",
     icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    price:  7.50
   },
   {
-    name: "boba",
+    name: "Boba",
     icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    price: 5.00
   },
   {
-    name: "chicken nuggies",
+    name: "Chicken Nuggies",
     icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    price: 4.50
   },
   {
-    name: "toilet paper",
+    name: "Toilet Paper Roll",
     icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    price: 1.00
   },
 ];
 
 const Content = () => {
-  const [mode, setMode] = useState(0);
 
   return (
     <div className="content">
@@ -31,7 +34,7 @@ const Content = () => {
       <img src={logo} className="App-logo" alt="mode" />
       <div className="modelSelection">
         {MODES.map((mode) => (
-          <ModelButton text={mode.name} icon={mode.icon} />
+          <ModelButton text={mode.name} icon={mode.icon} price={mode.price}/>
         ))}
       </div>
     </div>
