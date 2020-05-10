@@ -1,4 +1,4 @@
 module.exports = {
-    mode: '',
-    unitPrice: ''
+  mode: "Chipotle",
+  unitPrice: "7.5",
 };
