@@ -61,7 +61,7 @@ const AlternatePrice = () => {
                 <strong>Current Price: </strong> ${price}
             </p>
             <p>
-                <strong>This is equivalent to: </strong> ${newPrice} {mode}
+                <strong>This is equivalent to: </strong> {newPrice} {mode}
             </p>
             <Content/>
         </div>
