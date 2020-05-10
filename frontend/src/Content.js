@@ -28,14 +28,6 @@ const MODES = [
   },
 ];
 
-const getMode = () => {
-  chrome.storage.local.get(["mode"], function (result) {
-    if (!result) return "Couldn't get ooF";
-    console.log("oof " + result.mode);
-    return result.mode;
-  });
-};
-
 const Content = () => {
   const [mode, setMode] = useState("Set initial.");
 
