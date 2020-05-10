@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./dollar-sign.svg";
 import "./App.css";
-import { Button } from '@material-ui/core';
+import { Button } from "@material-ui/core";
 
 function App() {
   return (
@@ -25,24 +25,30 @@ function App() {
           title="Money Money Money video"
         ></iframe>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          More Info
-        </p>
+        <p>More Info</p>
         <img src={logo} className="App-logo" alt="logo" />
         <iframe
-          width="840"
-          height="473"
-          src="https://www.youtube.com/embed/IByDClFTOME?start=15"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ndNDPgYblGo"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-          title="Money Money Money video"
+          title="Demo Video"
         ></iframe>
-        <div style={{justifyContent: 'space-between'}}>
-          <Button className="button" variant="contained">More Info</Button>  &nbsp
-          <Button className="button" variant="contained">Source Code</Button>
+        <div style={{ justifyContent: "space-between" }}>
+          <Button className="button" variant="contained">
+            <a href="https://devpost.com/software/moneymoneymoney">More Info</a>
+          </Button>
+          <Button className="button" variant="contained">
+            <a href="https://github.com/SaloniSS/Hacklarious">Source Code</a>
+          </Button>
         </div>
-        <p> Made with 💖 by Megan Tran, Reshmi Ranjith, Saloni Shivdasani, and Vincent Vu </p>
+        <p>
+          {" "}
+          Made with 💖 by Megan Tran, Reshmi Ranjith, Saloni Shivdasani, and
+          Vincent Vu{" "}
+        </p>
       </header>
     </div>
   );
