@@ -26,6 +26,10 @@
   padding-right: 5rem;
 }
 
+.button {
+  margin-left: 100px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

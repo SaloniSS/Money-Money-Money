@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./dollar-sign.svg";
 import "./App.css";
+import { Button } from '@material-ui/core';
 
 function App() {
   return (
@@ -15,14 +16,33 @@ function App() {
         </p>
         <img src={logo} className="App-logo" alt="logo" />
         <iframe
-          width="560"
-          height="315"
+          width="840"
+          height="473"
           src="https://www.youtube.com/embed/IByDClFTOME?start=15"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
           title="Money Money Money video"
         ></iframe>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          More Info
+        </p>
+        <img src={logo} className="App-logo" alt="logo" />
+        <iframe
+          width="840"
+          height="473"
+          src="https://www.youtube.com/embed/IByDClFTOME?start=15"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          title="Money Money Money video"
+        ></iframe>
+        <div style={{justifyContent: 'space-between'}}>
+          <Button className="button" variant="contained">More Info</Button>  &nbsp
+          <Button className="button" variant="contained">Source Code</Button>
+        </div>
+        <p> Made with 💖 by Megan Tran, Reshmi Ranjith, Saloni Shivdasani, and Vincent Vu </p>
       </header>
     </div>
   );
