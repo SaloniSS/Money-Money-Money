@@ -41,6 +41,7 @@ const Content = () => {
 
   return (
     <div className="content">
+      <p>Are you really sure you need to buy that?</p>
       <p>
         <strong>Current Mode: </strong>
         {mode}
