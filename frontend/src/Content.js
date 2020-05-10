@@ -2,28 +2,33 @@
 
 import React, { useState, useEffect } from "react";
 import ModelButton from "./Button";
-import logo from "./logo.svg";
+import logo from "./dollar-sign.svg";
 import "./Content.css";
+
+import burrito from "./icons/burrito.png";
+import boba from "./icons/boba.png";
+import nuggies from "./icons/chicken_nuggies.png";
+import tp from "./icons/toilet_paper.png";
 
 const MODES = [
   {
     name: "Chipotle",
-    icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    icon: burrito,
     price: 7.5,
   },
   {
     name: "Boba",
-    icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    icon: boba,
     price: 5.0,
   },
   {
     name: "Chicken Nuggies",
-    icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    icon: nuggies,
     price: 4.5,
   },
   {
     name: "Toilet Paper Roll",
-    icon: "https://webstockreview.net/images/green-clipart-milkshake-9.png",
+    icon: tp,
     price: 1.0,
   },
 ];
@@ -41,6 +46,7 @@ const Content = () => {
 
   return (
     <div className="content">
+      <p>Are you really sure you need to buy that?</p>
       <p>
         <strong>Current Mode: </strong>
         {mode}

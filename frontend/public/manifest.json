@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Are you really sure you need to buy that?",
   "icons": {
-    "128": "logo192.png"
+    "128": "donna.png"
   },
   "browser_action": {
     "default_popup": "index.html"

@@ -1,17 +1,17 @@
 .App {
   text-align: center;
   width: 30rem;
-  height: 30rem;
+  height: 278.8px;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  background-color: #282c34;
+  background-color: #45a19e;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
   padding: 1rem;
 }
 

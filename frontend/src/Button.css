@@ -4,20 +4,22 @@
     height: fit-content;
     width: 10rem;
     padding: 0% 0% 0% 0%;
-    margin: 1% 1% 1% 1%;
-    background-color: white;
+    margin: 2% 2% 2% 2%;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 3px 3px 7px #D1CDC7 , -3px -3px 10px white ;
 }
 
 .hidden.content {
     font-size: 15px;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
 }
 
 .ui.animated.button .visible.content {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    padding: 2% 0% 2% 0%;
+    background-color: rgb(240, 240, 240);
     
 }
 
