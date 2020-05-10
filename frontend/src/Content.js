@@ -1,7 +1,8 @@
+/* global chrome */
+
 import React, { useState, useEffect } from "react";
 import ModelButton from "./Button";
 import logo from "./dollar-sign.svg";
-import GLOBAL from "./global";
 import "./Content.css";
 
 import burrito from "./icons/burrito.png";
@@ -12,12 +13,12 @@ import tp from "./icons/toilet_paper.png";
 const MODES = [
   {
     name: "Chipotle",
-    icon: burrito, 
+    icon: burrito,
     price: 7.5,
   },
   {
     name: "Boba",
-    icon: boba, 
+    icon: boba,
     price: 5.0,
   },
   {
@@ -33,10 +34,14 @@ const MODES = [
 ];
 
 const Content = () => {
-  const [mode, setMode] = useState(GLOBAL.mode);
+  const [mode, setMode] = useState("Set initial.");
 
   useEffect(() => {
-    setMode(GLOBAL.mode);
+    chrome.storage.local.get(["mode"], function (result) {
+      if (!result) setMode("Set initial.");
+      console.log("oof " + result.mode);
+      setMode(result.mode);
+    });
   }, []);
 
 
