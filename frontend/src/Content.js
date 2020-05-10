@@ -1,9 +1,8 @@
 /* global chrome */
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ModelButton from "./Button";
 import logo from "./logo.svg";
-import GLOBAL from "./global";
 import "./Content.css";
 
 const MODES = [
