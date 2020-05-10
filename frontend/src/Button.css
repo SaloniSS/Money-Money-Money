@@ -6,7 +6,7 @@
     padding: 0% 0% 0% 0%;
     margin: 1% 1% 1% 1%;
     background-color: rgb(245, 245, 245);
-    box-shadow: 3px 3px 5px rgb(161, 161, 161) , -3px -3px 5px white ;
+    box-shadow: 3px 3px 5px #D1CDC7 , -3px -3px 5px white ;
 }
 
 .hidden.content {
