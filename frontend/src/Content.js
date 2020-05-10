@@ -21,14 +21,14 @@ const MODES = [
     price: 5.0,
   },
   {
-    name: "Chicken Nuggies",
+    name: "Nuggies",
     icon: nuggies, 
     price: 4.5,
   },
   {
-    name: "Toilet Paper Roll",
+    name: "Toilet Paper",
     icon: tp, 
-    price: 1.0,
+    price: 100,
   },
 ];
 
@@ -39,9 +39,12 @@ const Content = () => {
     setMode(GLOBAL.mode);
   }, []);
 
+
+  
   return (
     <div className="content">
-      <p>Are you really sure you need to buy that?</p>
+      <p></p>
+      <p>Are you <i><strong>really</strong></i> sure you need to buy that?</p>
       <p>
         <strong>Current Mode: </strong>
         {mode}
