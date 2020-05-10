@@ -1,9 +1,10 @@
 
 .button.ui.huge.vertical.animated.button {
+    
     height: fit-content;
     width: 10rem;
     padding: 1% 1% 1% 1%;
-    margin:1% 1% 1% 1%;
+    margin: 1% 1% 1% 1%;
     background-color: white;
 }
 
@@ -13,9 +14,16 @@
 }
 
 .visible.content {
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: white;
+    
 }
 
 .thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 4rem;
 }
