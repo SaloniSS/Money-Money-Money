@@ -3,7 +3,7 @@
     
     height: fit-content;
     width: 10rem;
-    padding: 1% 1% 1% 1%;
+    padding: 0% 0% 0% 0%;
     margin: 1% 1% 1% 1%;
     background-color: white;
 }
@@ -13,10 +13,10 @@
     background-color: white;
 }
 
-.visible.content {
+.ui.animated.button .visible.content {
     display: block;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     
 }
