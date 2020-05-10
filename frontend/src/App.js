@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import "./semantic-ui.css";
 import Content from "./Content";
+import AlternatePrice from "./AlternatePrice";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <header className="header">
         <h2>MoneyMoneyMoney</h2>
       </header>
-      <Content />
+      <AlternatePrice />
     </div>
   );
 }

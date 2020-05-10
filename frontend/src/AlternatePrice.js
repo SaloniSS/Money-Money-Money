@@ -11,22 +11,14 @@ const AlternatePrice = () => {
     const [price, setPrice] = useState(0);
 
     useEffect(() => {
-        chrome.tabs.onUpdated.addListener(function (tab) {
-            if (changeInfo.url) {
-                url = tab.url;
-                index = url.indexOf("/dp/");
-                productID = url.substring(index+4, index+13);
-                setProduct(productID);
-            }
-        })
 
-        const fetchData = async () => {
-            const result = await axios(
-              `https://hacklarious.wl.r.appspot.com/${product}`
-            );
-            setPrice(result);
-        };
-        fetchData();
+        //get product id
+        chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+            const url = tabs[0].url;
+            const index = url.indexOf("/dp/");
+            const productID = url.substring(index+4, index+13);
+            setProduct(productID);
+        });
     });
 
     return (
@@ -36,11 +28,6 @@ const AlternatePrice = () => {
                 <strong>Current Price: </strong>
                 ${product}
             </p>
-            <p>
-            <strong>Price in {mode}: </strong>
-                {price * modePrice}
-            </p>
-            <Content/>
         </div>
     );
 };
