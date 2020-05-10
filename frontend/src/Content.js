@@ -1,6 +1,6 @@
 /* global chrome */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ModelButton from "./Button";
 import logo from "./logo.svg";
 import "./Content.css";
@@ -37,7 +37,15 @@ const getMode = () => {
 };
 
 const Content = () => {
-  const [mode, setMode] = useState(getMode());
+  const [mode, setMode] = useState("Set initial.");
+
+  useEffect(() => {
+    chrome.storage.local.get(["mode"], function (result) {
+      if (!result) setMode("Set initial.");
+      console.log("oof " + result.mode);
+      setMode(result.mode);
+    });
+  }, []);
 
   return (
     <div className="content">
