@@ -39,8 +39,8 @@ function App() {
         </p>
         <img src={logo} className="App-logo" alt="logo" />
         <iframe
-          width="560"
-          height="315"
+          width="840"
+          height="473"
           src="https://www.youtube.com/embed/ndNDPgYblGo"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
