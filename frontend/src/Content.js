@@ -1,3 +1,5 @@
+/* global chrome */
+
 import React, { useState, useEffect } from "react";
 import ModelButton from "./Button";
 import logo from "./logo.svg";
@@ -27,12 +29,16 @@ const MODES = [
   },
 ];
 
-const Content = () => {
-  const [mode, setMode] = useState(GLOBAL.mode);
+const getMode = () => {
+  chrome.storage.local.get(["mode"], function (result) {
+    if (!result) return "Couldn't get ooF";
+    console.log("oof " + result.mode);
+    return result.mode;
+  });
+};
 
-  useEffect(() => {
-    setMode(GLOBAL.mode);
-  }, []);
+const Content = () => {
+  const [mode, setMode] = useState(getMode());
 
   return (
     <div className="content">

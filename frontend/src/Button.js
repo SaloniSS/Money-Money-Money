@@ -1,3 +1,5 @@
+/* global chrome */
+
 import React from "react";
 import { Button } from "semantic-ui-react";
 import GLOBAL from "./global";
@@ -7,8 +9,13 @@ const ModelButton = (props) => {
   const changeMode = (mode) => {
     GLOBAL.mode = props.text;
     GLOBAL.unitPrice = props.price;
-    console.log(GLOBAL.mode + " is pressed with price " + GLOBAL.unitPrice);
     props.onPress(props.text);
+    chrome.storage.local.set(
+      { mode: props.text, price: props.price },
+      function () {
+        console.log("Value is set to " + props.text);
+      }
+    );
   };
 
   return (
