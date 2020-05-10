@@ -22,14 +22,14 @@ const MODES = [
     price: 5.0,
   },
   {
-    name: "Chicken Nuggies",
-    icon: nuggies,
+    name: "Nuggies",
+    icon: nuggies, 
     price: 4.5,
   },
   {
-    name: "Toilet Paper Roll",
-    icon: tp,
-    price: 1.0,
+    name: "Toilet Paper",
+    icon: tp, 
+    price: 100,
   },
 ];
 
@@ -44,9 +44,12 @@ const Content = () => {
     });
   }, []);
 
+
+  
   return (
     <div className="content">
-      <p>Are you really sure you need to buy that?</p>
+      <p></p>
+      <p>Are you <i><strong>really</strong></i> sure you need to buy that?</p>
       <p>
         <strong>Current Mode: </strong>
         {mode}
