@@ -5,9 +5,9 @@ import "./Button.css";
 
 const ModelButton = (props) => {
   const setMode = (mode) =>  {
-    console.log(props.text +  " is pressed with price " + props.price);
     GLOBAL.mode  =  props.text;
     GLOBAL.unitPrice = props.price;
+    console.log(GLOBAL.mode +  " is pressed with price " + GLOBAL.unitPrice);
   }
 
   return (
