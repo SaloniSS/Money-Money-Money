@@ -25,7 +25,18 @@ function App() {
           title="Money Money Money video"
         ></iframe>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>More Info</p>
+        <p>
+          MoneyMoneyMoney is a chrome extension that displays the value of the
+          products you view in terms of things you actually understand! Choices
+          include number of chipotle burritos, number of boba trips, number of
+          chicken nuggets, or of course, the most valuable asset of our age,
+          rolls of toilet paper.
+        </p>
+        <p>
+          How does it work? When you go on amazon to make another one of your
+          mindless purchases, MoneyMoneyMoney will remind you just how many
+          other things you could buy with that cash.
+        </p>
         <img src={logo} className="App-logo" alt="logo" />
         <iframe
           width="560"
@@ -45,9 +56,8 @@ function App() {
           </Button>
         </div>
         <p>
-          {" "}
           Made with 💖 by Megan Tran, Reshmi Ranjith, Saloni Shivdasani, and
-          Vincent Vu{" "}
+          Vincent Vu
         </p>
       </header>
     </div>
