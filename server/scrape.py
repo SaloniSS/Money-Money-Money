@@ -12,3 +12,6 @@ def scrape(url):
     }
     r = requests.get(url, headers=headers)
     return e.extract(r.text)
+
+price = scrape("https://www.amazon.com/SQUISHMALLOWS-Tabby-Unicorn-Purple-Rainbow/dp/B084H1ZSHT/ref=sr_1_1?dchild=1&keywords=squishmallow&qid=1589072038&sr=8-1")
+print(price)

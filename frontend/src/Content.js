@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ModelButton from "./Button";
 import logo from "./logo.svg";
+import GLOBAL from './global';
 import "./Content.css";
 
 const MODES = [
@@ -27,10 +28,15 @@ const MODES = [
 ];
 
 const Content = () => {
+  const [mode, setMode] = useState(GLOBAL.mode);
+
+  useEffect(() => {
+    setMode(GLOBAL.mode);
+  });
 
   return (
     <div className="content">
-      <p>Current Mode:</p>
+      <p><strong>Current Mode: </strong>{mode}</p>
       <img src={logo} className="App-logo" alt="mode" />
       <div className="modelSelection">
         {MODES.map((mode) => (
