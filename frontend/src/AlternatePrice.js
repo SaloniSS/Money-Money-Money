@@ -27,7 +27,7 @@ const AlternatePrice = () => {
         //get price
         const fetchData = async () => {
             const result = await axios(
-                `https://hacklarious.wl.r.appspot.com/${product}`
+                `https://money-money-money-funny.wl.r.appspot.com/${product}`
             );
             console.log(result.data);
             setPrice(result.data);
