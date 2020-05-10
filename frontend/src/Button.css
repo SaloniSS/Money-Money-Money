@@ -1,10 +1,17 @@
-button {
+.button.ui.huge.vertical.animated.button {
     height: 5rem;
     width: 10rem;
+    background-color: white;
+    margin: 7px;
 }
 
-.hidden {
+.hidden.content {
     font-size: 15px;
+    background-color: white;
+}
+
+.visible.content {
+    background-color: white;
 }
 
 .thumbnail {
