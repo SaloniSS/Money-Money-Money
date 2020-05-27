@@ -41,7 +41,7 @@ function App() {
         <iframe
           width="840"
           height="473"
-          src="https://www.youtube.com/embed/ndNDPgYblGo"
+          src="https://www.youtube.com/embed/r2eyxjckIYY"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -49,15 +49,23 @@ function App() {
         ></iframe>
         <div className="button-area">
           <Button className="button" variant="contained">
-            <a href="https://chrome.google.com/webstore/detail/money-money-money/ehdcenmhmjlkmlnmlglncndglmoglojd">Try It</a>
+            <a href="https://chrome.google.com/webstore/detail/money-money-money/ehdcenmhmjlkmlnmlglncndglmoglojd" target="_blank" rel="noopener noreferrer">
+              Try It
+            </a>
           </Button>
         </div>
-        <div style={{ justifyContent: "space-between" }}>
+        <div className="button-area">
           <Button className="button" variant="contained">
-            <a href="https://devpost.com/software/moneymoneymoney">More Info</a>
+            <a href="https://devpost.com/software/moneymoneymoney" target="_blank" rel="noopener noreferrer">
+              More Info
+            </a>
           </Button>
+        </div>
+        <div className="button-area">
           <Button className="button" variant="contained">
-            <a href="https://github.com/SaloniSS/Hacklarious">Source Code</a>
+            <a href="https://github.com/SaloniSS/Money-Money-Money" target="_blank" rel="noopener noreferrer">
+              Source Code
+            </a>
           </Button>
         </div>
         <p>
