@@ -72,6 +72,13 @@ function App() {
           Made with 💖 by Megan Tran, Reshmi Ranjith, Saloni Shivdasani, and
           Vincent Vu
         </p>
+        <div className="button-area">
+          <Button className="button" variant="contained">
+            <a href="mailto:hackathon.dream.team.utd@gmail.com" target="_blank" rel="noopener noreferrer">
+              Contact the Developers
+            </a>
+          </Button>
+        </div>
       </header>
     </div>
   );

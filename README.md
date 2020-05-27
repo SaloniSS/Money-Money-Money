@@ -1,9 +1,16 @@
 # Money Money Money
 
+## Created By
+
+- [Megan Tran](https://github.com/meganjtran)
+- [Reshmi Ranjith](https://github.com/ReshmiCode)
+- [Saloni Shivdasani](https://github.com/SaloniSS)
+- [Vincent Vu](https://github.com/vincent-vu280)
+
 ## Links
 
 [Extension Store Listing](https://chrome.google.com/webstore/detail/money-money-money/ehdcenmhmjlkmlnmlglncndglmoglojd)  
-[Website](https://hacklarious.firebaseapp.com/)  
+[Website](https://www.moneymoneymoney.tech)  
 [Demo Video](https://www.youtube.com/watch?v=r2eyxjckIYY)  
 [Devpost Submission](https://devpost.com/software/moneymoneymoney)  
 
