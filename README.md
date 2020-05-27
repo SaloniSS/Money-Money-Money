@@ -1,5 +1,12 @@
 # Money Money Money
 
+## Links
+
+[Extension Store Listing](https://chrome.google.com/webstore/detail/money-money-money/ehdcenmhmjlkmlnmlglncndglmoglojd)  
+[Website](https://hacklarious.firebaseapp.com/)  
+[Demo Video](https://www.youtube.com/watch?v=r2eyxjckIYY)  
+[Devpost Submission](https://devpost.com/software/moneymoneymoney)  
+
 ## Submission
 Submitted for Hacklarious - MLH Summer League 2020
 
