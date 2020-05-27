@@ -47,6 +47,11 @@ function App() {
           allowfullscreen
           title="Demo Video"
         ></iframe>
+        <div className="button-area">
+          <Button className="button" variant="contained">
+            <a href="https://chrome.google.com/webstore/detail/money-money-money/ehdcenmhmjlkmlnmlglncndglmoglojd">Try It</a>
+          </Button>
+        </div>
         <div style={{ justifyContent: "space-between" }}>
           <Button className="button" variant="contained">
             <a href="https://devpost.com/software/moneymoneymoney">More Info</a>
