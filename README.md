@@ -1,5 +1,7 @@
 # Money Money Money
 
+Test
+
 ## Inspiration
 
 Most of us have been guilty of impulse-buying something we don’t need online. When shopping online, it’s easy to get lost since there’s so many weird and interesting things that you can buy. MoneyMoneyMoney is here to help ground your decisions by comparing the costs of a potential purchase to the cost of something you’re more familiar with.
