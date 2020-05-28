@@ -1,6 +1,6 @@
 /* global chrome */
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ModelButton from "./Button";
 import logo from "./dollar-sign.svg";
 import "./Content.css";
@@ -23,45 +23,50 @@ const MODES = [
   },
   {
     name: "Nuggies",
-    icon: nuggies, 
+    icon: nuggies,
     price: 4.5,
   },
   {
     name: "Toilet Paper",
-    icon: tp, 
+    icon: tp,
     price: 100,
   },
 ];
 
-const Content = () => {
-  const [mode, setMode] = useState("Set initial.");
+const Content = (props) => {
+  alert(props.mode);
+  const currMode = MODES.find((mode) => mode.name === props.mode);
 
-  useEffect(() => {
-    chrome.storage.local.get(["mode"], function (result) {
-      if (!result) setMode("Set initial.");
-      console.log("oof " + result.mode);
-      setMode(result.mode);
-    });
-  }, []);
+  if (!currMode) {
+    return (
+      <div className="content">
+        <p>Internal Issue. Please report the bug on our Github.</p>
+      </div>
+    );
+  }
 
-
-  
   return (
     <div className="content">
       <p></p>
-      <p>Are you <i><strong>really</strong></i> sure you need to buy that?</p>
+      <p>
+        Are you{" "}
+        <i>
+          <strong>really</strong>
+        </i>{" "}
+        sure you need to buy that?
+      </p>
       <p>
         <strong>Current Mode: </strong>
-        {mode}
+        {props.mode}
       </p>
       <img src={logo} className="App-logo" alt="mode" />
       <div className="modelSelection">
         {MODES.map((mode) => (
           <ModelButton
-            text={mode.name}
-            icon={mode.icon}
-            price={mode.price}
-            onPress={setMode}
+            text={mode}
+            icon={currMode.icon}
+            price={currMode.price}
+            onPress={props.changeMode}
           />
         ))}
       </div>
